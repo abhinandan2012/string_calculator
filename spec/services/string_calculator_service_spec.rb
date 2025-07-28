@@ -1,0 +1,11 @@
+require 'rails_helper'
+
+RSpec.describe StringCalculator do
+  describe ".add" do
+    context "when the input is an empty string" do
+      it "returns 0" do
+        expect(StringCalculatorService.add("")).to eq(0)
+      end
+    end
+  end
+end
